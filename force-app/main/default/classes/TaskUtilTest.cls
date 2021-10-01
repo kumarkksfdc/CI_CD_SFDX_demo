@@ -16,17 +16,17 @@ private class TaskUtilTest {
     }
   
     @isTest static void testTaskPriority1() {
-        String pri = TaskUtil.getTaskPriority1('NY');
+        String pri = TaskUtil.getTaskPriority2('NY');
         System.assertEquals('Normal', pri);
     }
     
     @isTest static void testTaskHighPriority1() {
-        String pri = TaskUtil.getTaskPriority1('CA');
+        String pri = TaskUtil.getTaskPriority2('CA');
         System.assertEquals('High', pri);
     }
     
     @isTest static void testTaskPriorityInvalid1() {
-        String pri = TaskUtil.getTaskPriority1('Montana');
+        String pri = TaskUtil.getTaskPriority2('Montana');
         System.assertEquals(null, pri);
     }
   
